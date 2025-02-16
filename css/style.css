@@ -1,0 +1,233 @@
+body {
+  font-family: "Noto Sans JP", serif;
+  color: #333;
+}
+
+button {
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+button:hover {
+  opacity: 0.6;
+}
+
+.sample {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.sample__button-01 {
+  text-align: center;
+}
+.sample__button-01 button {
+  font-size: 16px;
+  font-weight: 700;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 10px 16px;
+  border-radius: 3px;
+  background: #fabe00;
+}
+
+.sample__button-02 {
+  text-align: center;
+}
+.sample__button-02 button {
+  font-size: 16px;
+  font-weight: 700;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 10px 92px 10px 16px;
+  border-radius: 3px;
+  background: #fabe00;
+  position: relative;
+}
+.sample__button-02 button::before, .sample__button-02 button::after {
+  position: absolute;
+  content: "";
+  width: 7.28px;
+  height: 12.14px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 15.22px;
+}
+.sample__button-02 button::before {
+  background: url("../img/arrow.svg") no-repeat center center;
+}
+.sample__button-02 button::after {
+  background: url("../img/arrow-stroke.svg") no-repeat center center;
+}
+
+.sample__button-03 {
+  text-align: center;
+}
+.sample__button-03 button {
+  font-size: 16px;
+  font-weight: 700;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 10px 92px 10px 16px;
+  border-radius: 30px;
+  background: #fabe00;
+  position: relative;
+}
+.sample__button-03 button::before, .sample__button-03 button::after {
+  position: absolute;
+  content: "";
+  width: 7.28px;
+  height: 12.14px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 75.19px;
+}
+.sample__button-03 button::before {
+  background: url("../img/arrow.svg") no-repeat center center;
+}
+.sample__button-03 button::after {
+  background: url("../img/arrow-stroke.svg") no-repeat center center;
+}
+
+.sample__button-04 {
+  text-align: center;
+}
+.sample__button-04 button {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 92px 10px 16px;
+  border-radius: 3px;
+  background: #fabe00;
+  -webkit-box-shadow: 0px 5px 0px 0px #e3a80e;
+          box-shadow: 0px 5px 0px 0px #e3a80e;
+}
+
+.sample__button-05 {
+  text-align: center;
+}
+.sample__button-05 button {
+  font-size: 16px;
+  font-weight: 700;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 10px 92px 10px 16px;
+  border-radius: 3px;
+  background: #fabe00;
+  -webkit-box-shadow: 3px 3px 7px 0px #dcdcdc;
+          box-shadow: 3px 3px 7px 0px #dcdcdc;
+}
+
+.sample__button-06 {
+  text-align: center;
+}
+.sample__button-06 button {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 92px 10px 16px;
+  border-radius: 3px;
+  background: -webkit-gradient(linear, left top, right top, from(#f5810e), to(#fabe00));
+  background: linear-gradient(90deg, #f5810e 0%, #fabe00 100%);
+}
+
+.sample__button-07 {
+  text-align: center;
+  background: #f6830e;
+  padding-top: 26px;
+  padding-bottom: 30px;
+}
+.sample__button-07 button {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 10px 92px 10px 16px;
+  border: 2px solid #fff;
+  background: #f6830e;
+}
+
+.sample__button-08 {
+  text-align: center;
+  background: #f6830e;
+  padding-top: 26px;
+  padding-bottom: 30px;
+}
+.sample__button-08 button {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 12px 54px;
+  border: 2px solid #fff;
+  background: #f6830e;
+  position: relative;
+}
+.sample__button-08 button::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 2px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -21px;
+  background: #fff;
+}
+
+.sample__button-09 {
+  text-align: center;
+}
+.sample__button-09 button {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 35px 30px;
+  border-radius: 50%;
+  background: #fabe00;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(159, 159, 159, 0.3));
+          filter: drop-shadow(0px 4px 4px rgba(159, 159, 159, 0.3));
+}
+
+.sample__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.sample__button-10 {
+  text-align: center;
+}
+.sample__button-10 button {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 34px;
+  border-radius: 3px;
+  background: #fabe00;
+  -webkit-box-shadow: 0px 5px 0px 0px #e3a80e;
+          box-shadow: 0px 5px 0px 0px #e3a80e;
+}
+.sample__button-10--green button {
+  color: #fff;
+  background: #43b549;
+  -webkit-box-shadow: 0px 5px 0px 0px #319937;
+          box-shadow: 0px 5px 0px 0px #319937;
+}
