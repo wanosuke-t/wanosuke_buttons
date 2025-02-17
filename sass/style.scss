@@ -44,7 +44,7 @@ button {
     background: #fabe00;
     position: relative;
 
-    &::before,
+    // &::before,
     &::after {
       position: absolute;
       content: "";
@@ -53,15 +53,17 @@ button {
       top: 50%;
       transform: translateY(-50%);
       right: 15.22px;
+      background: #fff;
+      clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
     }
 
-    &::before {
-      background: url("../img/arrow.svg") no-repeat center center;
-    }
+    // &::before {
+    //   background: url("../img/arrow.svg") no-repeat center center;
+    // }
 
-    &::after {
-      background: url("../img/arrow-stroke.svg") no-repeat center center;
-    }
+    // &::after {
+    //   background: url("../img/arrow-stroke.svg") no-repeat center center;
+    // }
   }
 }
 
@@ -77,7 +79,7 @@ button {
     background: #fabe00;
     position: relative;
 
-    &::before,
+    // &::before,
     &::after {
       position: absolute;
       content: "";
@@ -86,15 +88,17 @@ button {
       top: 50%;
       transform: translateY(-50%);
       right: 75.19px;
+      background: #fff;
+      clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
     }
 
-    &::before {
-      background: url("../img/arrow.svg") no-repeat center center;
-    }
+    // &::before {
+    //   background: url("../img/arrow.svg") no-repeat center center;
+    // }
 
-    &::after {
-      background: url("../img/arrow-stroke.svg") no-repeat center center;
-    }
+    // &::after {
+    //   background: url("../img/arrow-stroke.svg") no-repeat center center;
+    // }
   }
 }
 
@@ -188,9 +192,14 @@ button {
   text-align: center;
 
   button {
+    // padding: 35px 30px;
+    display: inline-grid;
+    place-items: center;
+    width: 124px;
+    height: 124px;
     font-size: 16px;
     font-weight: 700;
-    padding: 35px 30px;
+    line-height: 170%;
     border-radius: 50%;
     background: #fabe00;
     filter: drop-shadow(0px 4px 4px rgba(159, 159, 159, 0.3));
@@ -215,7 +224,7 @@ button {
     box-shadow: 0px 5px 0px 0px #e3a80e;
   }
 
-  &--green {
+  &.is-green {
     button {
       color: #fff;
       background: #43b549;

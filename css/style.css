@@ -52,7 +52,7 @@ button:hover {
   background: #fabe00;
   position: relative;
 }
-.sample__button-02 button::before, .sample__button-02 button::after {
+.sample__button-02 button::after {
   position: absolute;
   content: "";
   width: 7.28px;
@@ -61,12 +61,9 @@ button:hover {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: 15.22px;
-}
-.sample__button-02 button::before {
-  background: url("../img/arrow.svg") no-repeat center center;
-}
-.sample__button-02 button::after {
-  background: url("../img/arrow-stroke.svg") no-repeat center center;
+  background: #fff;
+  -webkit-clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
 }
 
 .sample__button-03 {
@@ -83,7 +80,7 @@ button:hover {
   background: #fabe00;
   position: relative;
 }
-.sample__button-03 button::before, .sample__button-03 button::after {
+.sample__button-03 button::after {
   position: absolute;
   content: "";
   width: 7.28px;
@@ -92,12 +89,9 @@ button:hover {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: 75.19px;
-}
-.sample__button-03 button::before {
-  background: url("../img/arrow.svg") no-repeat center center;
-}
-.sample__button-03 button::after {
-  background: url("../img/arrow-stroke.svg") no-repeat center center;
+  background: #fff;
+  -webkit-clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
 }
 
 .sample__button-04 {
@@ -194,9 +188,13 @@ button:hover {
   text-align: center;
 }
 .sample__button-09 button {
+  display: inline-grid;
+  place-items: center;
+  width: 124px;
+  height: 124px;
   font-size: 16px;
   font-weight: 700;
-  padding: 35px 30px;
+  line-height: 170%;
   border-radius: 50%;
   background: #fabe00;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(159, 159, 159, 0.3));
@@ -225,7 +223,7 @@ button:hover {
   -webkit-box-shadow: 0px 5px 0px 0px #e3a80e;
           box-shadow: 0px 5px 0px 0px #e3a80e;
 }
-.sample__button-10--green button {
+.sample__button-10.is-green button {
   color: #fff;
   background: #43b549;
   -webkit-box-shadow: 0px 5px 0px 0px #319937;
